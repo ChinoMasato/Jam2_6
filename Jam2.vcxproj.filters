@@ -9,8 +9,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="winmain.cpp">
+    <ClCompile Include="_null.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
+    <ClCompile Include="parts.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_system.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="parts.h">
+      <Filter>header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
