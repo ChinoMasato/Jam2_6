@@ -1,4 +1,8 @@
 ﻿#include "DxLib.h"
+#include "parts.h"
+
+void init();
+void draw();
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
@@ -10,8 +14,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		return -1;
 	}
 	SetDrawScreen(DX_SCREEN_BACK);
+	
+	init();
 
 	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0) {
+
+		draw();
 
 		ScreenFlip();
 		ClearDrawScreen();
@@ -21,4 +29,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	DxLib_End();
 
 	return 0;
+}
+
+void init()
+{
+	init_parts();
+}
+
+void draw()
+{
+	draw_parts();
 }
