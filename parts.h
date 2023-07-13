@@ -1,7 +1,8 @@
 #pragma once
 #include "_system.h"
 
-extern parts pa[10];
+const int pa_ = 30;
+extern parts pa[pa_];
 
 void init_parts();
 

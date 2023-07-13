@@ -15,12 +15,18 @@
     <ClCompile Include="parts.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_system.h">
       <Filter>header</Filter>
     </ClInclude>
     <ClInclude Include="parts.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
       <Filter>header</Filter>
     </ClInclude>
   </ItemGroup>

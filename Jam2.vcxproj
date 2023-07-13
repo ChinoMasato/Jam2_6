@@ -87,10 +87,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="parts.cpp" />
+    <ClCompile Include="scene.cpp" />
     <ClCompile Include="_null.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="parts.h" />
+    <ClInclude Include="scene.h" />
     <ClInclude Include="_system.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
